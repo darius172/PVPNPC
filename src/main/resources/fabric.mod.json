@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "pvp_npc",
+  "version": "${version}",
+  "name": "Pvpnpc",
+  "description": "Only play kit pvp ? With this mod you can add an npc that seels pvp items !",
+  "authors": [
+    "Pixel_b0t"
+  ],
+  "contact": {},
+  "license": "MIT",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.pixel.pvpnpc.pvpnpc.client.PvpnpcClient"
+    ],
+    "main": [
+      "net.pixel.Pvpnpc"
+    ]
+  },
+  "mixins": [
+    "pvpnpc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}
